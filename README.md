@@ -1,5 +1,9 @@
 # agent-sec-scanner
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
+[![Offline](https://img.shields.io/badge/network-offline%20read--only-green.svg)](#safety--scope)
+
 **Offline, read-only security linter for AI agent & MCP configurations.**
 Finds tool poisoning, hard-coded secrets, auto-approve/YOLO settings, unsafe launch commands and
 suspicious endpoints in the config files of Claude Desktop/Code, Cursor, VS Code, Windsurf, Cline/Roo,
