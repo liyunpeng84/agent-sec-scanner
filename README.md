@@ -16,6 +16,16 @@ Gemini CLI, OpenAI Codex, Zed, Continue, Kiro and exported MCP `tools/list` mani
 Status: **v0.1.0 MVP** — heuristic, regex-based. It will miss paraphrased attacks and can produce false positives;
 treat findings as review prompts, not verdicts.
 
+
+## Try it on Apify (no install)
+
+Hosted, paste-a-config runner of the same offline rules:
+
+- Store: [apify.com/outgoing_refill/agent-sec-scanner](https://apify.com/outgoing_refill/agent-sec-scanner)
+- Source Actor packaging: [liyunpeng84/agent-sec-scanner-actor](https://github.com/liyunpeng84/agent-sec-scanner-actor)
+
+Pricing on the Store listing is currently **pay per usage** (you pay Apify platform compute/storage only). There is **no developer revenue share** until monetization + payout details are configured on the Apify account — do not treat Store traffic as income yet.
+
 ## Why another MCP scanner?
 
 | | agent-sec-scanner | Snyk Agent Scan (ex `mcp-scan`) |
@@ -135,7 +145,7 @@ python -m unittest discover -s tests -t . -v
 
 Rug-pull baseline (hash tool descriptions and diff), optional local-LLM judge for paraphrased injection,
 Dify / Coze / LangChain / AutoGen agent definitions, Cherry Studio & more domestic clients (verified paths),
-auto-fix (`--fix` to rewrite literal secrets into env references), Apify Actor / GitHub Action packaging.
+auto-fix (`--fix` to rewrite literal secrets into env references), more GitHub Action examples. Apify Actor is live on the Store (see above).
 
 ## License
 
